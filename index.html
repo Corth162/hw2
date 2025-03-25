@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <main class="calculator">
+        <div>
+            <input id="display" readonly>
+            <div id="clicky">
+                <!-- functions -->
+                
+                <button onclick="clickToDisplay('+')"> + </button>
+                <button onclick="clickToDisplay('-')"> - </button>
+                <button onclick="clickToDisplay('*')"> x </button>
+                <button onclick="clickToDisplay('/')"> / </button>
+                
+                <!-- numbers -->
+                <button onclick= "clickToDisplay('1')"> 1 </button>
+                <button onclick= "clickToDisplay('2')"> 2 </button>
+                <button onclick= "clickToDisplay('3')"> 3 </button>
+                <button onclick= "clickToDisplay('4')"> 4 </button>
+                <button onclick= "clickToDisplay('5')"> 5 </button>
+                <button onclick= "clickToDisplay('6')"> 6 </button>
+                <button onclick= "clickToDisplay('7')"> 7 </button>
+                <button onclick= "clickToDisplay('8')"> 8 </button>
+                <button onclick= "clickToDisplay('9')"> 9 </button>
+                <button onclick= "clickToDisplay('0')"> 0 </button>
+
+                <!--extr-->
+                <button onclick="clearDisplay()"> clear </button>
+                <button onclick="calculate()"> = </button>
+            </div>
+        </div> 
+        
+    </main>
+    
+    <main class="diceholder">
+        <div class="controls">
+            <button type="button" class="key4diceroll" onclick="rollDice()">Roll Dice</button>
+            <!--drop down-->
+            <select id="diceCount">
+                <option value="1">1 Die</option>
+                <option value="2">2 Dice</option>
+                <option value="3">3 Dice</option>
+                <option value="4">4 Dice</option>
+                <option value="5">5 Dice</option>
+                <option value="6">6 Dice</option>
+                <option value="7">7 Dice</option>
+                <option value="8">8 Dice</option>
+                <option value="9">9 Dice</option>
+                <option value="10">10 Dice</option>
+            </select>
+        </div>
+        <div id="dicecontainer">
+            <p><strong>Rolled:</strong> <span id="rolledResults">-</span></p>
+            <p><strong>Total:</strong> <span id="rolledTotal">-</span></p>
+        </div> 
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- dont forget to do 2 projects btw 
+Calculator Application:
+Create a simple calculator application that can perform basic arithmetic operations (addition, subtraction, multiplication, division).
+Implement a user interface with HTML and CSS for inputting numbers and displaying the result.
+Write JavaScript functions to handle the calculation logic based on user input.
+
+Interactive Dice Roller:
+Develop an interactive dice roller that simulates rolling one or more dice.
+Allow users to select the number of dice and roll them.
+Display the result of each roll and calculate the total.
+-->

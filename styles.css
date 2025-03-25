@@ -1,0 +1,120 @@
+:root {
+    --primary: rgb(35, 192, 171);
+    --accent2: rgb(31, 137, 141);
+    --accent: rgb(110, 181, 139);
+    --background2: rgb(167, 203, 143);
+    --background: rgb(234, 131, 67);
+}
+/*bckground*/
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    margin: 0;
+}
+
+/*clss=clc*/
+.calculator {
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: var(--accent);
+    border-radius: 15px;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*input*/
+#display {
+    width: 90%;
+    padding: 15px;
+    font-size: 30px;
+    text-align: left;
+    border: none;
+    background-color: var(--background2);
+    color: var(--accent2);
+}
+
+#clicky {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 15px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: var(--background2);
+    color: var(--accent2);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+button:hover {
+    background-color: rgba(234, 142, 67, 0.87);
+}
+button:active {
+    background-color: rgba(226, 116, 26, 0.87);
+}
+/*dice*/
+.diceholder {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.die {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.dicedot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+  
+.key4diceroll {
+    padding: 10px 20px;
+    height: 50px;
+    width: 100px;
+    background-color: var(--accent, black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.key4diceroll:hover {
+    background-color: var(--background2);
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--accent2);
+    background-color: var(--background2);
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+#dicecontainer {
+    color: white;
+    font-family: 'Lucida Sans', sans-serif;
+}
